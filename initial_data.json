@@ -1,0 +1,3076 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$b398zC5E1iOIBVIQYFbyBB$3PvjZ2Az/nnK7ECJp2fWdcTCbFVYQUVtJjLxaxm1Tg4=",
+    "last_login": "2025-11-12T17:26:25.004Z",
+    "is_superuser": true,
+    "username": "gaurangbhutani14",
+    "first_name": "st",
+    "last_name": "Bhutani",
+    "email": "gaurangbhutani14@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-11-03T13:57:15.070Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "12",
+    "last_login": "2025-03-06T17:56:51Z",
+    "is_superuser": false,
+    "username": "utkarshmishra",
+    "first_name": "Utkarsh",
+    "last_name": "Mishra",
+    "email": "utkarsh13@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-03-06T17:56:26Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$bOKczTDW8cLc0gvprGJ0wV$0vX+cjN9AeqmaH3hVFs3vfEonlj5+cuUl+x6gjaInSM=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "neurocods_m8arwma8gcm89xkix36jci",
+    "first_name": "neurocods",
+    "last_name": "",
+    "email": "neurocods@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-07-18T18:20:10.973Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.profile",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "phone_number": "+918445285720",
+    "organisation_name": "IIIT Jabalpur ka clggg",
+    "address": null,
+    "language_selected": "eng",
+    "profile_photo": "profile_photos/gaurang_pic_2.png",
+    "is_premium_user": false,
+    "bio": null,
+    "occupation": null,
+    "kaggle_profile_url": null,
+    "github": null,
+    "twitter": null,
+    "portfolio": "https://gaurangbhutaniportfolio.netlify.app/",
+    "linkedin": null,
+    "pronouns": null,
+    "interests": null,
+    "date_of_birth": null,
+    "current_day_concept_read": false,
+    "current_day_problem_solved": false,
+    "current_streak": 0,
+    "longest_streak": 0,
+    "is_onboarding_complete": false,
+    "is_email_verified": false
+  }
+},
+{
+  "model": "accounts.profile",
+  "pk": 2,
+  "fields": {
+    "user": 3,
+    "phone_number": "8445285720",
+    "organisation_name": "Neurocods",
+    "address": "Bengaluru, Karnataka",
+    "language_selected": "eng",
+    "profile_photo": "",
+    "is_premium_user": true,
+    "bio": "Superman of data science",
+    "occupation": null,
+    "kaggle_profile_url": null,
+    "github": null,
+    "twitter": null,
+    "portfolio": null,
+    "linkedin": null,
+    "pronouns": null,
+    "interests": "",
+    "date_of_birth": "2025-03-06",
+    "current_day_concept_read": true,
+    "current_day_problem_solved": true,
+    "current_streak": 0,
+    "longest_streak": 0,
+    "is_onboarding_complete": true,
+    "is_email_verified": true
+  }
+},
+{
+  "model": "accounts.profile",
+  "pk": 3,
+  "fields": {
+    "user": 4,
+    "phone_number": null,
+    "organisation_name": null,
+    "address": null,
+    "language_selected": "eng",
+    "profile_photo": "",
+    "is_premium_user": false,
+    "bio": null,
+    "occupation": null,
+    "kaggle_profile_url": null,
+    "github": null,
+    "twitter": null,
+    "portfolio": null,
+    "linkedin": null,
+    "pronouns": null,
+    "interests": null,
+    "date_of_birth": null,
+    "current_day_concept_read": false,
+    "current_day_problem_solved": false,
+    "current_streak": 0,
+    "longest_streak": 0,
+    "is_onboarding_complete": false,
+    "is_email_verified": false
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 8,
+  "fields": {
+    "title": "MNIST Classification Model with ANN",
+    "slug": "iris-classification-model-ml",
+    "problem_type": "ML",
+    "author": 3,
+    "description": "# Iris Classification Model - ML\r\n\r\nBuild two machine learning models one from `SVM(Support Vector Machine)` and other one from `RF(Random Forest)` to classify iris flowers into three species: **setosa**, **versicolor**, and **virginica**, using the Iris dataset. The dataset contains 150 samples, each with four features: **sepal length**, **sepal width**, **petal length**, and **petal width**. Your task is to create a classification model that predicts the species based on these features. Implement data preprocessing on the provided training dataset, split the data into training and validation sets, train the model, and evaluate its perfromance on the validation set. \r\n\r\nUse Python with libraries like `scikit-learn` and `pandas` for pre-processing and model building. To submit the notebook first call the `check_model` method from `Testing` class present in `testing` package to evaluate both the models simultaneously. It will return the key-value dictonary mapping of **accuracy**, **precision**, **recall** and **f1 score** metrics.\r\n\r\n## Evaluation Metrics\r\n**Note:** You can only submit the file when you have fulfilled the following conditions:\r\n\r\n#### SVM (Support Vector Machine) classifier\r\n- **accuracy** >= 0.9\r\n- **precision** >= 0.9\r\n- **recall** >= 0.9\r\n- **f1 score** >= 0.9\r\n\r\n#### RF (Random Forest) classifier\r\n- **accuracy** >= 0.9\r\n- **precision** >= 0.9\r\n- **recall** >= 0.9\r\n- **f1 score** >= 0.9\r\n\r\n\r\n## Submission Code\r\n\r\nUse the `Testing` class to evaluate model. The steps include creating an object of the `Testing` class and utilizing its `check_model` method to assess model performance, which will return the evaluation.\r\n\r\n### Code Example\r\n\r\n```python\r\nfrom testing import Testing\r\n\r\n# Create an object of the Testing class with label encoder and scaler\r\ntest = Testing(label_encoder=labelEncoderObject, scaler_norm=standardScalerObject)\r\n\r\n# Evaluate an SVM classifier\r\nsvm_metrics = test.check_model(svm_classifier)\r\nprint(svm_metrics)\r\n\r\n# Evaluate an RF classifier\r\nrf_metrics = test.check_model(rf_classifier)\r\nprint(rf_metrics)\r\n```\r\n**Note:** If your evaluation metrics scores meet or exceed the required thresholds, click the submit button to finalize your solution. However, if any of your metrics do not meet the required thresholds, the solution will not be submitted.\r\n##",
+    "editorial_description": null,
+    "level": "Medium",
+    "last_updated_timestamp": "2025-03-07T18:11:10.434Z",
+    "creation_timestamp": "2025-02-13T14:58:32.664Z",
+    "accepted_submissions": 0,
+    "total_submissions": 0,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "recall": 0.92,
+      "roc_auc": 0.9,
+      "accuracy": 0.85,
+      "f1_score": 0.84,
+      "precision": 0.78
+    },
+    "test_data_file_path": "problems/dataset-based-problems/datasets/testing-data-iris-classification-model-ml.csv",
+    "data_available_to_user_file_path": "problems/dataset-based-problems/datasets/training-data-iris-classification-model-ml.csv",
+    "ideal_metrics_json_file_path": "problems/dataset-based-problems/ideal-metrics/iris-classification-model-ml.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 59,
+  "fields": {
+    "title": "forget",
+    "slug": "forget",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Enter large gun ability. Then usually establish candidate. Question dinner language avoid for.",
+    "editorial_description": "At process reason city worker. During miss order recent figure. Hand energy out discussion. Agreement truth take participant step couple friend.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.475Z",
+    "creation_timestamp": "2025-06-27T19:30:31.475Z",
+    "accepted_submissions": 39,
+    "total_submissions": 58,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.95,
+      "f1_score": 0.89
+    },
+    "test_data_file_path": "/dummy/path/test_a3d687ab-29fe-45dc-a7b5-a10758174429.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_b4e66176-02f4-49ac-9074-8659e88a8bd9.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_699a1701-3950-42b3-9ae1-626a79ba9b06.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 60,
+  "fields": {
+    "title": "worry",
+    "slug": "worry",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Teach feeling show address can make. Free bring north. Improve hand computer myself significant.",
+    "editorial_description": "Baby western real defense. Key attack edge hand those.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.489Z",
+    "creation_timestamp": "2025-06-27T19:30:31.489Z",
+    "accepted_submissions": 13,
+    "total_submissions": 89,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.78,
+      "f1_score": 0.79
+    },
+    "test_data_file_path": "/dummy/path/test_8ebfe99a-ef8c-4b64-a982-9d613c06682d.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_1826ba2d-e91b-4dc5-a477-c89b290a94ba.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_ed91d402-b481-4af0-904e-78c13a03194a.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 61,
+  "fields": {
+    "title": "design",
+    "slug": "design",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Test because gas south situation. Necessary never left. Receive magazine always game north environmental indeed peace. Include here hotel front little pass owner.",
+    "editorial_description": "Order perhaps about now focus later north. Water I wide budget watch. Former within gun road standard.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.500Z",
+    "creation_timestamp": "2025-06-27T19:30:31.500Z",
+    "accepted_submissions": 37,
+    "total_submissions": 72,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.81,
+      "f1_score": 0.92
+    },
+    "test_data_file_path": "/dummy/path/test_cb588284-c14b-448b-a6c8-0633c24faf6a.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_a4c85a38-b481-4c80-af0e-761d0e5f9010.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_1960db96-aefb-4a43-ab7b-6deab5aa8c00.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 62,
+  "fields": {
+    "title": "worry",
+    "slug": "worry-2",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Include behind away writer tree attorney positive.",
+    "editorial_description": "Five human see list Mrs week. Yourself certain sign nothing performance hard each up. Involve sure thought itself adult.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.513Z",
+    "creation_timestamp": "2025-06-27T19:30:31.513Z",
+    "accepted_submissions": 1,
+    "total_submissions": 50,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.95,
+      "f1_score": 0.84
+    },
+    "test_data_file_path": "/dummy/path/test_5797fc6a-105c-4038-ba67-bb565faea2d3.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_fd0b9c72-b182-4cb5-a07f-c82ca6c1401c.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_5581c05b-3ac4-41b6-bd41-a34a94ec89c0.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 63,
+  "fields": {
+    "title": "beautiful",
+    "slug": "beautiful",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Throughout edge office race company born.",
+    "editorial_description": "Song girl explain expert former amount national. Deal stay affect chair decade four off own. Certainly leader camera imagine power study. I west score support.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.529Z",
+    "creation_timestamp": "2025-06-27T19:30:31.529Z",
+    "accepted_submissions": 36,
+    "total_submissions": 57,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.81,
+      "f1_score": 0.9
+    },
+    "test_data_file_path": "/dummy/path/test_e5fc5940-05b1-42ab-9291-e0a2d35eec02.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_3ea211ac-e8b7-4cec-bbf6-17b608bd7cb9.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_ed09b515-d91b-4bd0-b1ae-ce8e2c3c64be.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 64,
+  "fields": {
+    "title": "state",
+    "slug": "state",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Like we analysis fear already number. Affect guess number character professor matter hold physical.",
+    "editorial_description": "Old through practice site kitchen radio. Any role real soon ahead history game after.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.542Z",
+    "creation_timestamp": "2025-06-27T19:30:31.542Z",
+    "accepted_submissions": 34,
+    "total_submissions": 68,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.77,
+      "f1_score": 0.79
+    },
+    "test_data_file_path": "/dummy/path/test_d1c17133-751e-46b5-ba55-9833df2ca042.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_59d018cb-846d-4cbb-9c33-dcc7a86cb76f.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_b5a632db-6e33-4cfd-b7af-a9565258d462.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 65,
+  "fields": {
+    "title": "summer",
+    "slug": "summer",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Of example economic bad no decision. Office itself option early agreement forget. Speech light eye sport letter player character throw.",
+    "editorial_description": "Security shoulder break success charge science foreign inside. Lot choice drug least professor base understand.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.556Z",
+    "creation_timestamp": "2025-06-27T19:30:31.556Z",
+    "accepted_submissions": 5,
+    "total_submissions": 69,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.74,
+      "f1_score": 0.87
+    },
+    "test_data_file_path": "/dummy/path/test_d5b2064c-e236-4f63-a7eb-5f38cec53946.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_60fd5330-f383-4b7a-b940-a31549f40ad6.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_f0a7d4c4-e2cf-4110-a929-e5e4c27cf230.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 66,
+  "fields": {
+    "title": "once",
+    "slug": "once",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Laugh spend bag base gas public. Would marriage model bed audience others.",
+    "editorial_description": "Billion ok whose strategy possible. Take example notice inside class protect listen.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.569Z",
+    "creation_timestamp": "2025-06-27T19:30:31.569Z",
+    "accepted_submissions": 14,
+    "total_submissions": 51,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.91,
+      "f1_score": 0.78
+    },
+    "test_data_file_path": "/dummy/path/test_51e72d29-2f8f-46cf-92cb-3a09d1581df4.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_241e3821-8c10-43ae-a487-ce892880faf7.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_3122ffc6-b316-45b0-850f-bdbdeb99316d.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 67,
+  "fields": {
+    "title": "raise",
+    "slug": "raise",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Beautiful country run skill or question. Total discuss make bed method any. Oil generation performance education meet add. High western our.",
+    "editorial_description": "Subject fund through those once popular force. Respond room article measure child. Effort hold must among thing forward member.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.583Z",
+    "creation_timestamp": "2025-06-27T19:30:31.583Z",
+    "accepted_submissions": 1,
+    "total_submissions": 90,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.82,
+      "f1_score": 0.76
+    },
+    "test_data_file_path": "/dummy/path/test_73c30e52-63ea-4c47-bacc-deda2874c7d6.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_da92274b-1bca-49d9-b1c6-df6f067eb0e3.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_d1974c9d-caaf-4d36-949f-27ba68f0904b.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 68,
+  "fields": {
+    "title": "rock",
+    "slug": "rock",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Example field no what effort offer have. Behavior admit field usually serve anything professional hot.",
+    "editorial_description": "Blood design commercial recent popular listen look. Parent until capital central vote stuff indeed.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.594Z",
+    "creation_timestamp": "2025-06-27T19:30:31.594Z",
+    "accepted_submissions": 9,
+    "total_submissions": 69,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.78,
+      "f1_score": 0.79
+    },
+    "test_data_file_path": "/dummy/path/test_9bcfe019-ae54-4aa2-a751-c47797d171be.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_564b32cb-8dfb-4cac-8617-931400c612aa.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_613daf2d-8eee-4f9a-bdbe-682306690a6a.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 69,
+  "fields": {
+    "title": "blood",
+    "slug": "blood",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "City blood trial.",
+    "editorial_description": "Only side hold. Sometimes local decade heavy inside family eight. Speech wait first room federal local candidate.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.607Z",
+    "creation_timestamp": "2025-06-27T19:30:31.607Z",
+    "accepted_submissions": 39,
+    "total_submissions": 93,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.8,
+      "f1_score": 0.8
+    },
+    "test_data_file_path": "/dummy/path/test_43250f4d-5d66-4e32-871e-3f5910e07409.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_ee779345-c912-4ff6-a37f-281d9819528c.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_28ec625a-a0e2-4c0c-a378-313fe06bc11f.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 70,
+  "fields": {
+    "title": "me",
+    "slug": "me",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Put stand customer project toward. I lot marriage network increase teach table. Degree identify sign.",
+    "editorial_description": "Chance but power recognize we under toward. Perform perform officer produce. Financial Mr animal ten kid manage.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.618Z",
+    "creation_timestamp": "2025-06-27T19:30:31.618Z",
+    "accepted_submissions": 44,
+    "total_submissions": 89,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.79,
+      "f1_score": 0.9
+    },
+    "test_data_file_path": "/dummy/path/test_4d5881d4-3343-47fa-bdab-3acb0982789a.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_a3cd90a8-9e20-44ba-9a5c-aae07b42dff1.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_2d9e763b-20fa-4cb2-aec7-54c59e2f5309.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 71,
+  "fields": {
+    "title": "front",
+    "slug": "front",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Every board defense drug foot about. Conference political eat some question difficult. Door surface friend receive security skill understand. Body tell none near tonight son little.",
+    "editorial_description": "Capital office relate individual somebody no senior.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.628Z",
+    "creation_timestamp": "2025-06-27T19:30:31.628Z",
+    "accepted_submissions": 12,
+    "total_submissions": 59,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.72,
+      "f1_score": 0.82
+    },
+    "test_data_file_path": "/dummy/path/test_0987f941-2218-44b7-a972-5b600d0e40e9.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_9f26223e-a2d7-47f5-9917-a90496eb98cc.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_d987ebf6-e9e4-423e-a734-9426fb579d8f.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 72,
+  "fields": {
+    "title": "art",
+    "slug": "art",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Grow final agent stop easy information. Become behavior order him power.",
+    "editorial_description": "Skin tax memory see bank past still between. Moment buy a collection husband detail once message.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.639Z",
+    "creation_timestamp": "2025-06-27T19:30:31.639Z",
+    "accepted_submissions": 40,
+    "total_submissions": 72,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.74,
+      "f1_score": 0.94
+    },
+    "test_data_file_path": "/dummy/path/test_310ace22-2a11-4766-9381-566c0c20999e.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_56eef577-c8e7-442e-859f-cbbea69653ec.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_40fc2b6d-8146-44a0-abb8-631a5afd55f1.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 73,
+  "fields": {
+    "title": "size",
+    "slug": "size",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Huge successful wrong around strong two others federal. Military animal public know keep mission themselves. Skin role site customer state difficult home fire.",
+    "editorial_description": "Peace win assume I sister specific. Rich develop including medical. Room range among them. Establish at detail specific success rich.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.654Z",
+    "creation_timestamp": "2025-06-27T19:30:31.654Z",
+    "accepted_submissions": 14,
+    "total_submissions": 97,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.77,
+      "f1_score": 0.78
+    },
+    "test_data_file_path": "/dummy/path/test_19fb7dcb-99c8-44d4-ad19-5b22729c87f4.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_eb231cfe-6355-4fa3-938f-0149020e7a88.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_845f0dc5-5055-4c95-97a8-2efe6112c42e.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 74,
+  "fields": {
+    "title": "national",
+    "slug": "national",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Paper off pattern lawyer development. Left indeed guy increase during man stuff.",
+    "editorial_description": "Trial base girl court order former road. Life speech factor management nearly.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.666Z",
+    "creation_timestamp": "2025-06-27T19:30:31.666Z",
+    "accepted_submissions": 30,
+    "total_submissions": 56,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.97,
+      "f1_score": 0.71
+    },
+    "test_data_file_path": "/dummy/path/test_2b27413f-95b4-46c9-b7df-d62ffdf92764.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_48200f80-96e5-46ae-8eaf-63e879069860.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_ae53dee4-d6b1-45ac-9aab-0668af1cb0d2.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 75,
+  "fields": {
+    "title": "kid",
+    "slug": "kid",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Suddenly professional television medical between hair out. Science us need continue account growth. Enjoy different close environment collection five.",
+    "editorial_description": "Begin station certain sort example whether white. Image different discuss worker speech thank.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.678Z",
+    "creation_timestamp": "2025-06-27T19:30:31.678Z",
+    "accepted_submissions": 3,
+    "total_submissions": 97,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.75,
+      "f1_score": 0.85
+    },
+    "test_data_file_path": "/dummy/path/test_afdf33c0-0ce4-4fdf-b5c2-3327e9f59feb.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_49bb8815-355b-4a3f-8adb-6b7af1c91c34.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_a7766fef-5e14-4704-9360-3de7dfedf7e8.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 76,
+  "fields": {
+    "title": "choose",
+    "slug": "choose",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Enter sense ground herself happen wait find. See at water much art drug. Southern stock defense both he structure have. Enough like power cut will.",
+    "editorial_description": "Bit level fact authority wish boy. Particularly enough live election a.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.689Z",
+    "creation_timestamp": "2025-06-27T19:30:31.689Z",
+    "accepted_submissions": 24,
+    "total_submissions": 97,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.76,
+      "f1_score": 0.96
+    },
+    "test_data_file_path": "/dummy/path/test_4415f89b-cffb-486f-a557-a96546981f49.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_5d391814-07e8-4aaf-ab8e-80fe65af39f8.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_5cd35c9c-5661-4740-a87a-be4f89cfdc39.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 77,
+  "fields": {
+    "title": "just",
+    "slug": "just",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Stay tree knowledge. Participant way size that above concern wrong follow. Start once I laugh wait strong church college.",
+    "editorial_description": "Society could truth crime poor quality analysis. Fish these shake ago five open whole work.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.704Z",
+    "creation_timestamp": "2025-06-27T19:30:31.704Z",
+    "accepted_submissions": 31,
+    "total_submissions": 55,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.91,
+      "f1_score": 0.72
+    },
+    "test_data_file_path": "/dummy/path/test_75508f1c-7a66-49b8-9b7c-412a9d959352.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_89a972f3-68e6-49eb-8d8e-4beba50d1855.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_0cfafaf7-4152-4f79-a0f5-cdbec6cbd99c.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 78,
+  "fields": {
+    "title": "agent",
+    "slug": "agent",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Serious consider effort here final. Forward back piece cell.",
+    "editorial_description": "Region material lot debate give. Forget job church hand hand protect.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.725Z",
+    "creation_timestamp": "2025-06-27T19:30:31.725Z",
+    "accepted_submissions": 29,
+    "total_submissions": 53,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.74,
+      "f1_score": 0.86
+    },
+    "test_data_file_path": "/dummy/path/test_f9ac3aa6-7f1f-4bba-8f78-7adb001256b0.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_d2fb5541-cf1f-4bad-8924-d95de513db8f.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_5cf63540-00cf-4b46-bb24-4b09a5845a4d.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 79,
+  "fields": {
+    "title": "provide",
+    "slug": "provide",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Maintain rise fly color. Candidate table for only. Sell sound end keep enter law affect conference.",
+    "editorial_description": "Attention seat quite food sister. Tonight whose goal. Pm field voice base adult.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.745Z",
+    "creation_timestamp": "2025-06-27T19:30:31.745Z",
+    "accepted_submissions": 29,
+    "total_submissions": 50,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.93,
+      "f1_score": 0.82
+    },
+    "test_data_file_path": "/dummy/path/test_adea807c-818f-48c5-bde4-aac70efab428.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_99004386-3603-42d7-a5c0-b9b48bad213b.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_a2ada116-361b-48c3-833e-3373f5d78eeb.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 80,
+  "fields": {
+    "title": "dog",
+    "slug": "dog",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Career voice guy page. Color right fast focus country shake.",
+    "editorial_description": "Order remain nation international watch however. Cultural ok system soon. Especially president fast new.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.756Z",
+    "creation_timestamp": "2025-06-27T19:30:31.756Z",
+    "accepted_submissions": 41,
+    "total_submissions": 66,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.95,
+      "f1_score": 0.82
+    },
+    "test_data_file_path": "/dummy/path/test_b7a601f5-d2f2-4591-9bcf-c7a70c186a2a.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_f3dda9d8-c4b3-4b49-ac19-daaf960a627d.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_5fa8db89-43d9-44b2-a6a9-720633044cf3.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 81,
+  "fields": {
+    "title": "now",
+    "slug": "now",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Quickly note place into particularly decade. Song seven truth tough floor fly.",
+    "editorial_description": "Administration cover safe big garden paper include answer. Southern little easy recent stop friend.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.765Z",
+    "creation_timestamp": "2025-06-27T19:30:31.765Z",
+    "accepted_submissions": 31,
+    "total_submissions": 73,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.98,
+      "f1_score": 0.92
+    },
+    "test_data_file_path": "/dummy/path/test_5bf724a8-12fc-4833-8113-1960a475d2a1.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_3875ae6b-3987-4f50-ab79-23ae551a87cd.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_a4248594-2bac-4b6d-8b8d-2a1f6e947a65.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 82,
+  "fields": {
+    "title": "together",
+    "slug": "together",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Oil computer whole third. Memory between imagine people campaign bar fund.",
+    "editorial_description": "Allow skin list particular. Require most environment not. Civil often mind really wind game act.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.774Z",
+    "creation_timestamp": "2025-06-27T19:30:31.774Z",
+    "accepted_submissions": 39,
+    "total_submissions": 77,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.88,
+      "f1_score": 0.97
+    },
+    "test_data_file_path": "/dummy/path/test_fe26f230-b089-470a-bd96-5d4f7b52ffc6.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_27894cb7-1e49-498b-9fc2-58b8e0c05de0.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_6fd20ae7-53d8-436e-b84c-a3cbd9f7f622.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 83,
+  "fields": {
+    "title": "sing",
+    "slug": "sing",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Pm edge enjoy to outside religious. No travel thousand high bit keep. Yeah professional sound nice increase information.",
+    "editorial_description": "Style national trade boy later. Enough take through author reveal. Lose guy newspaper challenge state box business organization.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.782Z",
+    "creation_timestamp": "2025-06-27T19:30:31.782Z",
+    "accepted_submissions": 15,
+    "total_submissions": 81,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.96,
+      "f1_score": 0.77
+    },
+    "test_data_file_path": "/dummy/path/test_6151d529-3171-489e-b297-6d261a9da8d5.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_15128518-3a6a-490b-a8d2-040f2c56baea.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_40b24042-62dc-43e1-95ee-850c5144cd62.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 84,
+  "fields": {
+    "title": "full",
+    "slug": "full",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Song perform camera according good. Detail safe property just maybe.",
+    "editorial_description": "Top because through current morning probably bar. Gun natural whose. Entire cold good vote it together.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.790Z",
+    "creation_timestamp": "2025-06-27T19:30:31.790Z",
+    "accepted_submissions": 40,
+    "total_submissions": 73,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.81,
+      "f1_score": 0.79
+    },
+    "test_data_file_path": "/dummy/path/test_b3cdfd29-a07d-463b-a385-73031a453d8a.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_431c2044-4041-483f-918a-63f41dd701c4.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_c61d94ee-da8e-4b7a-8040-b4c1c944e2bc.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 85,
+  "fields": {
+    "title": "difference",
+    "slug": "difference",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Left under image quite seek. Mrs number finally quite position. Area reach sell writer suddenly recently.",
+    "editorial_description": "Large allow fast compare stop.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.798Z",
+    "creation_timestamp": "2025-06-27T19:30:31.798Z",
+    "accepted_submissions": 38,
+    "total_submissions": 89,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.71,
+      "f1_score": 0.74
+    },
+    "test_data_file_path": "/dummy/path/test_e49320f7-6a0a-4d19-a3db-99e6cfd139d1.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_5c83542e-b63e-4c81-8a5b-0ce815d23270.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_ce3fce09-30b1-4462-a6c5-d53c3e9f1c77.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 86,
+  "fields": {
+    "title": "capital",
+    "slug": "capital",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Natural song down area plan stock southern. Citizen hope action fight. Action peace network south.",
+    "editorial_description": "When agreement find wear final. Wait article idea.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.806Z",
+    "creation_timestamp": "2025-06-27T19:30:31.806Z",
+    "accepted_submissions": 38,
+    "total_submissions": 61,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.89,
+      "f1_score": 0.8
+    },
+    "test_data_file_path": "/dummy/path/test_9aa19e7f-1aee-4ad8-9678-fc7b5a0cda98.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_b107969d-21c7-42ce-940b-c943c2df5b0c.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_f5480595-41d3-4d8f-9287-61f15908609a.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 87,
+  "fields": {
+    "title": "summer",
+    "slug": "summer-2",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Situation family safe forward indicate suffer. Their process travel future whom although trouble. We goal us ahead stop.",
+    "editorial_description": "Little seat pressure will culture man success. Choice particular to defense always few. Draw bag know current eye. He fill car city car during occur.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.814Z",
+    "creation_timestamp": "2025-06-27T19:30:31.815Z",
+    "accepted_submissions": 28,
+    "total_submissions": 77,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.89,
+      "f1_score": 0.87
+    },
+    "test_data_file_path": "/dummy/path/test_7ada875a-eba4-485a-9451-0cda549b5170.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_b01bc650-9d36-4068-b7a3-6a96404bffb6.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_8ff13f2c-c80f-4ea7-b1d1-edaa71611311.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 88,
+  "fields": {
+    "title": "worker",
+    "slug": "worker",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Watch any build to admit first check. Where describe pretty thus participant.",
+    "editorial_description": "Mission his low tonight address response yet recognize. Believe management effort executive up effort there. By moment first really he best manager.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.823Z",
+    "creation_timestamp": "2025-06-27T19:30:31.823Z",
+    "accepted_submissions": 8,
+    "total_submissions": 96,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.73,
+      "f1_score": 0.87
+    },
+    "test_data_file_path": "/dummy/path/test_9f61a5fe-964d-4aa8-9259-87d970ff40b8.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_2855481e-41f1-4022-b50f-92952a4f7e7a.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_34de26a6-de50-4c21-bb0e-06316a24af66.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 89,
+  "fields": {
+    "title": "recent",
+    "slug": "recent",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Arrive oil system. Current project world best check question believe. Evening voice since.",
+    "editorial_description": "Fight agree page probably skill risk suggest enjoy. Baby fill human woman wall reveal. Peace culture analysis thousand.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.831Z",
+    "creation_timestamp": "2025-06-27T19:30:31.831Z",
+    "accepted_submissions": 35,
+    "total_submissions": 66,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.99,
+      "f1_score": 0.79
+    },
+    "test_data_file_path": "/dummy/path/test_6941d041-e940-4f9a-8ecc-6630f9e6a88a.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_4d6823d8-4dfa-4971-90a9-83654cd82b59.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_8d008b95-8fb8-4544-975a-330432239c6b.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 90,
+  "fields": {
+    "title": "trial",
+    "slug": "trial",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Dark investment which its consider billion.",
+    "editorial_description": "Even wife economy other. Job international small land from question visit. Carry former still need yet Democrat.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.839Z",
+    "creation_timestamp": "2025-06-27T19:30:31.839Z",
+    "accepted_submissions": 48,
+    "total_submissions": 79,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.81,
+      "f1_score": 0.76
+    },
+    "test_data_file_path": "/dummy/path/test_610c5d60-ac73-4493-b107-ff41f6feaad0.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_71695f1a-7719-4271-9334-5be599a56860.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_969cf5c0-99e0-4f78-9fef-38852b301663.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 91,
+  "fields": {
+    "title": "foreign",
+    "slug": "foreign",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Actually action term thing avoid leg. Answer city collection ask.",
+    "editorial_description": "Likely time under help condition. Open guy something with energy perhaps.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.847Z",
+    "creation_timestamp": "2025-06-27T19:30:31.847Z",
+    "accepted_submissions": 19,
+    "total_submissions": 76,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.95,
+      "f1_score": 0.78
+    },
+    "test_data_file_path": "/dummy/path/test_104ff095-cd7b-45da-8f44-aa71c4c08553.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_345eed12-a489-4e8c-9411-880e9dc8758b.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_a0f647c1-7ef2-41e2-8a3f-d1dd49a17b0f.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 92,
+  "fields": {
+    "title": "then",
+    "slug": "then",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Relationship small teacher able pull center return.",
+    "editorial_description": "Happen wish participant beyond buy. Late tree idea. Listen dark your girl interesting none.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.855Z",
+    "creation_timestamp": "2025-06-27T19:30:31.855Z",
+    "accepted_submissions": 13,
+    "total_submissions": 68,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.94,
+      "f1_score": 0.72
+    },
+    "test_data_file_path": "/dummy/path/test_5c3d2eed-e225-4964-b170-aec7621f5d78.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_3d252d40-63e5-4ce4-bbb2-a4c585eb19b4.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_e6b17c64-ab66-4348-8950-25429ff99d41.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 93,
+  "fields": {
+    "title": "support",
+    "slug": "support",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Republican return certainly walk election. Form modern now process.",
+    "editorial_description": "Technology discover free cut. Director cut certainly thus worry whatever upon teacher. But himself current than medical school.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.863Z",
+    "creation_timestamp": "2025-06-27T19:30:31.863Z",
+    "accepted_submissions": 49,
+    "total_submissions": 61,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.72,
+      "f1_score": 0.98
+    },
+    "test_data_file_path": "/dummy/path/test_198478f8-25f1-4d7d-8a2e-6270e59648b7.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_49f932c6-cdfb-455c-a986-55085bca7f74.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_12337ab9-a5ee-46d9-ba06-27fc53968926.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 94,
+  "fields": {
+    "title": "put",
+    "slug": "put",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Red too participant growth current political former. Own writer campaign produce leg ground finally. Interview western enough option event develop consumer.",
+    "editorial_description": "Example hundred often collection.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.871Z",
+    "creation_timestamp": "2025-06-27T19:30:31.871Z",
+    "accepted_submissions": 12,
+    "total_submissions": 64,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.79,
+      "f1_score": 0.74
+    },
+    "test_data_file_path": "/dummy/path/test_745e2455-2491-4700-b11b-522ff4ae548b.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_8082a76b-a49f-4d9c-98fa-436de0487116.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_eaf815dc-1f9c-441c-bdba-4eba746dd086.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 95,
+  "fields": {
+    "title": "there",
+    "slug": "there",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Team environmental weight fish result management serious music. Hair American wind citizen former across government. Energy listen agree administration. Other opportunity major guy theory myself cut.",
+    "editorial_description": "Him must tonight least boy sit. Gun subject relate born feel meeting professional stage. Skin decide increase economy tell attack range.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.878Z",
+    "creation_timestamp": "2025-06-27T19:30:31.878Z",
+    "accepted_submissions": 47,
+    "total_submissions": 96,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.84,
+      "f1_score": 0.88
+    },
+    "test_data_file_path": "/dummy/path/test_1a851cfd-4494-452c-adba-57dfae4bbacc.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_cda5064c-d2f8-4f0a-a877-94600baae6ff.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_aa6a3269-11b9-46d9-abe5-27e6ba78a260.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 96,
+  "fields": {
+    "title": "role",
+    "slug": "role",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Special skill order close. Become hear yet six. Traditional factor care.",
+    "editorial_description": "Manage low talk dream. Wind natural trade let difficult long final brother. Radio evidence believe official car accept.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.886Z",
+    "creation_timestamp": "2025-06-27T19:30:31.886Z",
+    "accepted_submissions": 36,
+    "total_submissions": 57,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.88,
+      "f1_score": 0.95
+    },
+    "test_data_file_path": "/dummy/path/test_d4ddb57d-0f3b-4b66-9025-104af2d35e73.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_b4d738f3-3647-4528-a45b-e363ccf3b315.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_cc8b1629-3d82-40ec-9c12-642bba4de7ae.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 97,
+  "fields": {
+    "title": "themselves",
+    "slug": "themselves",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Describe finally upon summer my. Wide always total number model avoid.",
+    "editorial_description": "Sometimes development during federal book. Senior expect poor box. If administration action throughout seek general learn.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.896Z",
+    "creation_timestamp": "2025-06-27T19:30:31.896Z",
+    "accepted_submissions": 12,
+    "total_submissions": 51,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.88,
+      "f1_score": 0.95
+    },
+    "test_data_file_path": "/dummy/path/test_c7d703fd-a778-43e3-8484-08fad87ddac7.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_b1177d2c-5e53-4d4a-af49-6587c0678c8f.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_633d7406-e004-4a73-a17f-091b900a9e35.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 98,
+  "fields": {
+    "title": "brother",
+    "slug": "brother",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Interesting PM surface foreign thing choice improve. Never several seem small threat weight.",
+    "editorial_description": "Cell either best ten free respond father.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.903Z",
+    "creation_timestamp": "2025-06-27T19:30:31.903Z",
+    "accepted_submissions": 19,
+    "total_submissions": 70,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.9,
+      "f1_score": 0.74
+    },
+    "test_data_file_path": "/dummy/path/test_23f2e7ec-c980-4240-8a61-2426f4f851c9.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_3c01b66e-3965-45e8-9f77-19e01ca70891.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_0b227981-1e7f-4c04-8472-282f15ec73a5.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 99,
+  "fields": {
+    "title": "black",
+    "slug": "black",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Heart today world building gun wait go. Sit stage reflect firm south. Bag matter activity full month.",
+    "editorial_description": "News glass tend.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.912Z",
+    "creation_timestamp": "2025-06-27T19:30:31.912Z",
+    "accepted_submissions": 29,
+    "total_submissions": 52,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.95,
+      "f1_score": 0.94
+    },
+    "test_data_file_path": "/dummy/path/test_9640d239-ecd1-4030-bf8d-18c4a77a7158.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_d75bc0bc-414f-4a0e-a099-e59fd1266719.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_aee3df36-b87f-46fc-af29-a7d2d175440c.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 100,
+  "fields": {
+    "title": "approach",
+    "slug": "approach",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Choose PM fall discuss. Something quality claim type if artist. Culture data argue hope.",
+    "editorial_description": "Discover strategy success office see organization. Determine read individual.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.920Z",
+    "creation_timestamp": "2025-06-27T19:30:31.920Z",
+    "accepted_submissions": 34,
+    "total_submissions": 90,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.77,
+      "f1_score": 0.72
+    },
+    "test_data_file_path": "/dummy/path/test_930d72e8-cd65-4884-8caa-6a4f14321d67.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_c17cf0d6-8aad-4b37-8f7d-a0d5960ac1e7.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_38b6db87-fb30-4913-9bee-c8a48fdd84af.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 101,
+  "fields": {
+    "title": "good",
+    "slug": "good",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Product international lawyer chance each meet may course. Exactly beat no building hear tax risk. Dog fear peace fact democratic need bill. Could instead quality up successful.",
+    "editorial_description": "Sport live great address data know key. Positive task individual especially cost where.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.926Z",
+    "creation_timestamp": "2025-06-27T19:30:31.926Z",
+    "accepted_submissions": 24,
+    "total_submissions": 68,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.99,
+      "f1_score": 0.97
+    },
+    "test_data_file_path": "/dummy/path/test_c7ca918c-45bb-4949-aa91-9afdd6b21d54.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_565ed95f-7885-428f-b323-801326e37d78.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_29292254-d6d9-4f8a-a35f-07c35432b3f0.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 102,
+  "fields": {
+    "title": "campaign",
+    "slug": "campaign",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Activity threat walk design hair how. Seat usually book.",
+    "editorial_description": "How final part memory employee. Beautiful play respond.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.933Z",
+    "creation_timestamp": "2025-06-27T19:30:31.933Z",
+    "accepted_submissions": 49,
+    "total_submissions": 93,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.84,
+      "f1_score": 0.73
+    },
+    "test_data_file_path": "/dummy/path/test_ade98eb6-9ad4-4d13-8afe-d67815461b7d.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_32e43366-d18e-48c3-bb88-71cbf8cd151b.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_56f44ca0-587e-4b6e-ad5f-0d9837d7e9ba.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 103,
+  "fields": {
+    "title": "candidate",
+    "slug": "candidate",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "All just statement. Middle account eight build type already. And want office stand.",
+    "editorial_description": "Use whose provide south. Brother statement become husband woman increase. Past so thousand him every democratic citizen.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.943Z",
+    "creation_timestamp": "2025-06-27T19:30:31.943Z",
+    "accepted_submissions": 32,
+    "total_submissions": 96,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.75,
+      "f1_score": 0.82
+    },
+    "test_data_file_path": "/dummy/path/test_cc6661c6-aec1-4240-b13d-b236c07c9848.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_4ea4195c-7419-4ee7-90cc-805dcc8022fc.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_fec49c95-26eb-45f4-9d69-4cae163a6999.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 104,
+  "fields": {
+    "title": "require",
+    "slug": "require",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Itself her leave learn. Rise southern along network spend full. Learn physical son huge audience person.",
+    "editorial_description": "Door than to manage talk to along on. Along evidence benefit security cause between. Exist argue citizen.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.953Z",
+    "creation_timestamp": "2025-06-27T19:30:31.953Z",
+    "accepted_submissions": 36,
+    "total_submissions": 76,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.76,
+      "f1_score": 0.87
+    },
+    "test_data_file_path": "/dummy/path/test_f3668808-51ea-4fe8-8536-7068f2c7ca6d.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_404644db-4c3c-4e13-b658-ce7e6c5bdd62.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_e311839c-e32c-41cf-956c-a1f7dbea258c.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 105,
+  "fields": {
+    "title": "board",
+    "slug": "board",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Answer war age scene report right. Meet certainly door according make must economy.",
+    "editorial_description": "Per world them whole too.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.963Z",
+    "creation_timestamp": "2025-06-27T19:30:31.963Z",
+    "accepted_submissions": 7,
+    "total_submissions": 54,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.93,
+      "f1_score": 0.76
+    },
+    "test_data_file_path": "/dummy/path/test_09b7d314-99cf-442b-ad6f-40f70eae9836.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_e49f88c2-cb59-46f4-b350-54a55ae37e29.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_33f8970f-a543-45f6-92dd-87bc405cf1b3.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 106,
+  "fields": {
+    "title": "despite",
+    "slug": "despite",
+    "problem_type": "ML",
+    "author": 1,
+    "description": "Wrong environmental particular material cause however coach ago. Spend job cost control machine hour traditional.",
+    "editorial_description": "No morning million director attorney. Result analysis man story car TV. Individual song democratic officer. Create eight modern white.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:30:31.975Z",
+    "creation_timestamp": "2025-06-27T19:30:31.975Z",
+    "accepted_submissions": 21,
+    "total_submissions": 55,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.88,
+      "f1_score": 0.86
+    },
+    "test_data_file_path": "/dummy/path/test_537ce934-dcc3-431c-937f-1de7bfd3b8e2.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_99b08625-972f-44ab-9e50-264ddd47c81f.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_0036f709-e4f0-43a3-bbc3-7d4e2f0fa8d2.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 107,
+  "fields": {
+    "title": "charge",
+    "slug": "charge",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "To size position red see hear. Have security few ability continue support.",
+    "editorial_description": "If least someone.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:30:31.987Z",
+    "creation_timestamp": "2025-06-27T19:30:31.987Z",
+    "accepted_submissions": 20,
+    "total_submissions": 64,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.77,
+      "f1_score": 0.76
+    },
+    "test_data_file_path": "/dummy/path/test_ac4ec47e-aa68-4f0c-887c-26c99791b5c9.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_3f6d270d-a64e-4ef3-9e85-6995cd062a6a.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_20e3d896-a680-4d3e-b965-26cff4117b8e.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.datasetbasedproblem",
+  "pk": 108,
+  "fields": {
+    "title": "their",
+    "slug": "their",
+    "problem_type": "DL",
+    "author": 1,
+    "description": "Free too heart human everyone according prove. Commercial both dinner remember.",
+    "editorial_description": "Person society not action light. Thank hot through finally three. With at through computer sound official. Total authority difference end process understand here.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:30:31.996Z",
+    "creation_timestamp": "2025-06-27T19:30:31.996Z",
+    "accepted_submissions": 28,
+    "total_submissions": 88,
+    "course_id": null,
+    "evaluation_metrics_dict": {
+      "accuracy": 0.9,
+      "f1_score": 0.9
+    },
+    "test_data_file_path": "/dummy/path/test_8c825480-9358-4e65-8654-f29c14aa8a93.csv",
+    "data_available_to_user_file_path": "/dummy/path/data_ad338ea7-dfe7-46f9-8df4-c23e3318261e.csv",
+    "ideal_metrics_json_file_path": "/dummy/path/ideal_788727b7-f663-4575-841e-56b00d9eaa2d.json",
+    "tags": []
+  }
+},
+{
+  "model": "problems.conceptbasedproblem",
+  "pk": 104,
+  "fields": {
+    "title": "Sigmoid Activation Function",
+    "slug": "sigmoid-activation-function",
+    "problem_type": "DL",
+    "author": 3,
+    "description": "# Sigmoid Activation Function\r\n\r\nWrite a Python function to perform sigmoid non-linear activation function for a given input x. The function should return the output with rounded to four decimal places.\r\n\r\n## Formula\r\n\r\n$$\\sigma(x) = \\frac{1}{1+e^{-x}}$$\r\n\r\n\r\n## Input\r\n```\r\nx = [[0.67026718 0.80077598 0.97208611]\r\n     [0.02452369 0.35309061 0.16618383]]\r\n```\r\n\r\n## Output\r\n```\r\n[[0.6616, 0.6901, 0.7255],\r\n [0.5061, 0.5874, 0.5415]]\r\n```\r\n\r\n## Explaination\r\n\r\nLets take a simple input like a single number be it  0.\r\nBy putting the value in the equation we get: $$\\sigma(x) = \\frac{1}{1+e^{0}} => \\frac{1}{1+1} => 0.5$$\r\n\r\n**Note:** The same procedure will be for each number in the array/tensor and will be automatically computed due to the internal working of the tensors and array.",
+    "editorial_description": "## Editorial: Implementing the Sigmoid Activation Function\r\n\r\nThe sigmoid activation function is commonly used in neural networks, especially in binary classification tasks. It maps any real-valued number to a value between 0 and 1, making it suitable for models that need to output probabilities.\r\n\r\nThe sigmoid function is mathematically defined as:\r\n\r\n\\[\r\n\\sigma(x) = \\frac{1}{1 + e^{-x}}\r\n\\]\r\n\r\nBelow are two implementations of the sigmoid function—one using NumPy and the other using PyTorch.\r\n\r\n---\r\n\r\n### ✅ NumPy Implementation\r\n\r\n```python\r\nimport numpy as np\r\n\r\ndef sigmoid(x: np.array) -> np.array:\r\n    result = 1 / (1 + np.exp(-x))\r\n    return np.round(result, 4)\r\n```\r\n\r\n#### Explanation:\r\n- `np.exp(-x)` computes the exponential of the negative input.\r\n- The sigmoid function formula is applied element-wise.\r\n- `np.round(result, 4)` ensures the output is rounded to 4 decimal places, often useful for cleaner representation or comparison.\r\n\r\n---\r\n\r\n### ✅ PyTorch Implementation\r\n\r\n```python\r\nimport torch\r\n\r\ndef sigmoid(x: torch.tensor) -> torch.tensor:\r\n    result = 1 / (1 + torch.exp(-x))\r\n    return torch.round(result, decimals=4)\r\n```\r\n\r\n#### Explanation:\r\n- Works similarly to the NumPy version but uses PyTorch's `torch.exp` for tensor operations.\r\n- The result is rounded using `torch.round(result, decimals=4)` to maintain consistency with the NumPy version.\r\n\r\n---\r\n\r\n### 🔍 Key Differences:\r\n| Feature           | NumPy Version                | PyTorch Version             |\r\n|-------------------|------------------------------|-----------------------------|\r\n| Library Used      | `numpy`                      | `torch`                     |\r\n| Data Type         | `np.array`                   | `torch.tensor`              |\r\n| Rounding Function | `np.round(..., 4)`           | `torch.round(..., decimals=4)` |\r\n| Use Case          | General-purpose computation  | Deep learning models        |\r\n\r\n---\r\n\r\nBoth implementations are correct and follow the mathematical definition of the sigmoid function. Choose the one that aligns with the rest of your codebase or framework—NumPy for general numerical tasks and PyTorch for neural network models.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-07-08T18:27:53.740Z",
+    "creation_timestamp": "2025-07-08T18:27:53.740Z",
+    "accepted_submissions": 0,
+    "total_submissions": 0,
+    "course_id": null,
+    "code_editor_template": "import numpy as np\r\n\r\ndef sigmoid(x:np.array) -> np.array:\r\n    ## write code here\r\n    return result",
+    "ideal_solution_code": "import numpy as np\r\n\r\ndef sigmoid(x:np.array) -> np.array:\r\n    result = 1 / (1 + np.exp(-x))\r\n    return np.round(result, 4)",
+    "validation_testcases": null,
+    "submission_testcases": null,
+    "tags": [
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "problems.conceptbasedproblem",
+  "pk": 105,
+  "fields": {
+    "title": "Softmax Activation Function",
+    "slug": "softmax-activation-function",
+    "problem_type": "DL",
+    "author": 3,
+    "description": "# Softmax Activation Function\r\n\r\nWrite a Python function that calculates the softmax activation for an input list of scores. It should return the index of the element with the highest softmax value.\r\n\r\n## Formula\r\n\r\n$$\\sigma(z)_i = \\frac{e^{z_i}}{\\sum_{j=1}^K e^{z_j}}$$\r\n\r\nWhere:\r\n- $ \\sigma(z)_i $ is the softmax of the $ i^{th} $ element,\r\n- $ z $ is the input vector of scores,\r\n- $ K $ is the number of classes or elements in the input,\r\n- $ e^{z_i} $ is the exponential of the $ i^{th} $ element in the input vector,\r\n- $ \\sum_{j=1}^K e^{z_j} $ is the sum of the exponentials of all elements in the input vector, normalizing the result.\r\n\r\n\r\n## Input\r\n```\r\nx = [[0.34386578 0.45272443 0.89306652]\r\n     [0.73258801 0.82034706 0.33041877]]\r\n```\r\n\r\n## Output\r\n```\r\n[2, 1]\r\n```\r\n\r\n## Explaination\r\nThe output are the index of the highest value in the row.\r\n\r\n\r\n## Information\r\n\r\nThe softmax activation function is widely used in classification tasks. It transforms a vector of values into probabilities, where each value lies between 0 and 1, and the sum of all probabilities equals 1. This makes softmax ideal for multi-class classification, providing interpretable output probabilities.",
+    "editorial_description": "",
+    "level": "easy",
+    "last_updated_timestamp": "2025-10-13T18:51:37.088Z",
+    "creation_timestamp": "2025-07-08T18:30:18.028Z",
+    "accepted_submissions": 1,
+    "total_submissions": 2,
+    "course_id": null,
+    "code_editor_template": "import numpy as np\r\n\r\ndef softmax(values:np.array) -> np.array:\r\n    ## write code here\r\n    return result",
+    "ideal_solution_code": "print(2+3)",
+    "validation_testcases": null,
+    "submission_testcases": null,
+    "tags": [
+      3,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "problems.conceptbasedproblem",
+  "pk": 106,
+  "fields": {
+    "title": "Single Neuron",
+    "slug": "single-neuron",
+    "problem_type": "DL",
+    "author": 3,
+    "description": "# Single Neuron\r\n\r\nWrite a Python class to implement a single neuron with a non-linear activation function. The class method will take as input: **weights**, **bias** during class initialization (`__init__`), and **inputs** when calling `forward_pass` method. Use the **sigmoid** activation function to compute the output. Remember to round the sigmoid output to 4 decimal places.\r\n\r\n## Diagram\r\n\r\n![Single Neuron](single_neuron.png \"Single Neuron\")\r\n\r\n## Formula\r\n\r\n$$z = \\sum_{i=1}^N W_i^T X_i + b_i$$\r\n\r\n$$\\hat{y} = \\sigma(z)$$\r\n\r\nWhere:\r\n- $\\sigma(z)$ is the softmax of the output of computation\r\n- $W_i$ are the provided weights\r\n- $X_i$ is the provided inputs\r\n- $b_i$ is the provided bias\r\n\r\n## Class Explaination\r\nThe Neuron class implement the following methods:\r\n\r\n* Initialization (<span style=\"color:orange\">\\_\\_init__</span>)\r\n    * Weights and biases are given for initalization\r\n\r\n* Forward (<span style=\"color:orange\">forward_pass</span>)\r\n    * Contains code for forward propogation\r\n    * Applies the weighted sum of input variables and the bias\r\n    * Also classes the <span style=\"color:orange\">sigmoid</span> function for adding non-linearity.\r\n\r\n* Sigmoid Activation Function (<span style=\"color:orange\">sigmoid</span>)\r\n    * Applies the sigmoid non-linearity on the input data and returns it.\r\n\r\n\r\n\r\n## Input\r\n```\r\ninputs = [0.88335018 0.53320947 0.63543918 0.59924071 0.44730865 0.1486209 0.3522603  0.25319403 0.18942125 0.02479488]\r\n```\r\n\r\n## Output\r\n```\r\n[0.9088 0.9338 0.96   0.9326 0.9554 0.9118 0.9074 0.9318 0.9484 0.9329]\r\n```\r\n\r\n## Explaination\r\nA dot product is applied between the weight and the given input, after which bias is added and the whole output is fed to the sigmoid non-linear activation function to the get the final output.\r\n\r\n## Information\r\n\r\nAn artificial neuron, inspired by biological neurons, is the fundamental unit in neural networks. It receives multiple input signals, each assigned a weight that indicates its importance. The neuron sums these weighted inputs and applies an activation function to determine if the output should \"fire\" (produce an output signal) or remain inactive. This output is then passed to other neurons, enabling complex computations and learning processes across layers in a neural network.",
+    "editorial_description": "",
+    "level": "easy",
+    "last_updated_timestamp": "2025-07-08T18:34:25.896Z",
+    "creation_timestamp": "2025-07-08T18:34:13.228Z",
+    "accepted_submissions": 0,
+    "total_submissions": 0,
+    "course_id": null,
+    "code_editor_template": "import numpy as np\r\n\r\nclass Neuron:\r\n    def __init__(self, weights, bias):\r\n        self.weights = weights\r\n        self.bias = bias\r\n    \r\n    def forward_pass(self, inputs:np.array) -> np.array:\r\n        ## write code here\r\n        return output\r\n    \r\n    def sigmoid(self, x:np.array) -> np.array:\r\n        ## write code here\r\n        return act_output",
+    "ideal_solution_code": "import numpy as np\r\n\r\nclass Neuron:\r\n    def __init__(self, weights, bias):\r\n        self.weights = weights\r\n        self.bias = bias\r\n    \r\n    def forward_pass(self, inputs:np.array) -> np.array:\r\n        y_hat = np.dot(self.weights, inputs) + self.bias\r\n        y_hat = self.sigmoid(y_hat)\r\n        return y_hat\r\n    \r\n    def sigmoid(self, x:np.array) -> np.array:\r\n        result = 1 / (1 + np.exp(-x))\r\n        return np.round(result, 4)",
+    "validation_testcases": null,
+    "submission_testcases": null,
+    "tags": [
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "problems.conceptbasedproblem",
+  "pk": 107,
+  "fields": {
+    "title": "Losses",
+    "slug": "losses",
+    "problem_type": "DL",
+    "author": 3,
+    "description": "# Losses\r\n\r\nWrite a Python class to implement the given losses used in machine learning and deep learning. Each loss has seperate method in the class. The return of each method should be the calculated loss value. \r\n\r\n\r\n## Formulas\r\n\r\n### Mean Absolute Error/ L1 loss Functions\r\n$$ MAE = \\frac{1}{n} \\sum_i^n |y_i - \\hat{y}_i|$$\r\n\r\n### Mean Squared Error/Squared loss/ L2 loss\r\n$$ MSE = \\frac{1}{n} \\sum_i^n (y_i - \\hat{y}_i)^2$$\r\n\r\n### Root Mean Sqaure Error\r\n$$ RMSE = \\sqrt{\\frac{1}{n} \\sum_i^n (y_i - \\hat{y}_i)^2}$$\r\n\r\n### Binary Cross Entropy/Log Loss\r\n$$ LogLoss = -\\frac{1}{n} \\sum_i^n (y_i*\\log\\hat{y}_i + (1-y_i)*\\log(1-\\hat{y}_i))$$\r\n\r\n### Categorical Cross Entropy\r\n$$ CCE = -\\frac{1}{n} \\sum_i^n\\sum_j^k y_{ij}*\\log\\hat{y}_{ij}$$\r\n\r\n\r\nWhere:\r\n- $y$ is the actual output\r\n- $\\hat{y}$ is the predicted output\r\n- $n$ is the sample count\r\n- $k$ is the number of classes\r\n\r\n\r\n\r\n## Class Explaination\r\nThe Neuron class implement the following methods:\r\n\r\n* Initialization (<span style=\"color:orange\">\\_\\_init__</span>)\r\n    * Empty method for class initialization\r\n\r\n* MAE Loss (<span style=\"color:orange\">mae</span>)\r\n    * Implementation of MAE loss function\r\n\r\n* MSE Loss (<span style=\"color:orange\">mse</span>)\r\n    * Implementation of MSE loss function\r\n\r\n* RMSE Loss (<span style=\"color:orange\">rmse</span>)\r\n    * Implementation of RMSE loss function\r\n\r\n* BCE Loss (<span style=\"color:orange\">binary_cross_entropy</span>)\r\n    * Implementation of Binary Cross Entropy loss function\r\n\r\n* CCE Loss (<span style=\"color:orange\">categorical_cross_entropy</span>)\r\n    * Implementation of Categorical Cross Entropy loss function\r\n    \r\n\r\n\r\n## Input\r\n```\r\norg_output = [[0.7995843249806056, 0.4724314105533015, 0.2536254760859443], \r\n              [0.14242017713550614, 0.433691131645507, 0.07088169422736534], \r\n              [0.45035598352644024, 0.9104584518551397, 0.05020937928734159]]\r\n\r\npred_output = [[0.6444792722442368, 0.6663546529149915, 0.1408858736110632], \r\n               [0.22997517452225746, 0.2575369935353504, 0.7610563137169272], \r\n               [0.5460074016041736, 0.26441988916373205, 0.9200873107490299]]\r\n```\r\n\r\n## Output\r\n```\r\nmae = 0.3363577294211377\r\n```\r\n\r\n## Explaination\r\nThe loss function measures the difference between the predicted and actual values. It quantifies the model's error. By minimizing this loss, the model is trained to make more accurate predictions.",
+    "editorial_description": "",
+    "level": "easy",
+    "last_updated_timestamp": "2025-07-08T18:37:03.460Z",
+    "creation_timestamp": "2025-07-08T18:36:10.901Z",
+    "accepted_submissions": 0,
+    "total_submissions": 0,
+    "course_id": null,
+    "code_editor_template": "import numpy as np\r\n\r\nclass Losses:\r\n    def __init__(self):\r\n        pass\r\n    \r\n    def mae(self, org:np.array, pred:np.array) -> float:\r\n        ## write code here\r\n        return loss_val\r\n    \r\n    def mse(self, org:np.array, pred:np.array) -> float:\r\n        ## write code here\r\n        return loss_val\r\n    \r\n    def rmse(self, org:np.array, pred:np.array) -> float:\r\n        ## write code here\r\n        return loss_val\r\n    \r\n    def binary_cross_entropy(self, org:np.array, pred:np.array, epsilon=0.0000001) -> float:\r\n        # use clip on pred to avoid log(0) which can lead to NaN values\r\n        ## write code here\r\n        return loss_val\r\n    \r\n    def categorical_cross_entropy(self, org:np.array, pred:np.array, epsilon=0.0000001) -> float:\r\n        # use clip on pred to avoid log(0) which can lead to NaN values\r\n        ## write code here\r\n        return loss_val",
+    "ideal_solution_code": "import numpy as np\r\n\r\nclass Losses:\r\n    def __init__(self):\r\n        pass\r\n    \r\n    def mae(self, org:np.array, pred:np.array) -> float:\r\n        return np.mean(np.abs(org-pred))\r\n    \r\n    def mse(self, org:np.array, pred:np.array) -> float:\r\n        return np.mean((org-pred)**2)\r\n    \r\n    def rmse(self, org:np.array, pred:np.array) -> float:\r\n        return np.sqrt(np.mean((org-pred)**2))\r\n    \r\n    def binary_cross_entropy(self, org:np.array, pred:np.array, epsilon=0.0000001) -> float:\r\n        # Clip pred to avoid log(0) which can lead to NaN values\r\n        pred = np.clip(pred, epsilon, 1 - epsilon)\r\n        return -np.mean(org*np.log(pred) + (1-org)*np.log(1-pred))\r\n    \r\n    def categorical_cross_entropy(self, org:np.array, pred:np.array, epsilon=0.0000001) -> float:\r\n        # Clip pred to avoid log(0) which can lead to NaN values\r\n        pred = np.clip(pred, epsilon, 1 - epsilon)\r\n        return -np.sum(org * np.log(pred)) / org.shape[0]",
+    "validation_testcases": null,
+    "submission_testcases": null,
+    "tags": [
+      8,
+      9,
+      10,
+      11
+    ]
+  }
+},
+{
+  "model": "problems.submission",
+  "pk": 1,
+  "fields": {
+    "content_type": 10,
+    "object_id": 105,
+    "user": 1,
+    "code": "YO_YO",
+    "verdict": 3,
+    "created_timestamp": "2025-10-13T18:50:40.097Z",
+    "updated_timestamp": "2025-10-13T18:50:40.097Z",
+    "time_taken": null,
+    "memory_taken": null,
+    "failed_testcase_info": null
+  }
+},
+{
+  "model": "problems.submission",
+  "pk": 2,
+  "fields": {
+    "content_type": 10,
+    "object_id": 105,
+    "user": 1,
+    "code": "HEELOO",
+    "verdict": 5,
+    "created_timestamp": "2025-10-13T18:51:37.084Z",
+    "updated_timestamp": "2025-10-13T18:51:37.084Z",
+    "time_taken": null,
+    "memory_taken": null,
+    "failed_testcase_info": null
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 4,
+  "fields": {
+    "content_type": 12,
+    "object_id": 8,
+    "date": "2025-04-02",
+    "concept": 1
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 5,
+  "fields": {
+    "content_type": 12,
+    "object_id": 59,
+    "date": "2025-06-01",
+    "concept": 159
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 6,
+  "fields": {
+    "content_type": 12,
+    "object_id": 60,
+    "date": "2025-06-02",
+    "concept": 200
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 9,
+  "fields": {
+    "content_type": 12,
+    "object_id": 61,
+    "date": "2025-06-05",
+    "concept": 1
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 10,
+  "fields": {
+    "content_type": 12,
+    "object_id": 62,
+    "date": "2025-06-06",
+    "concept": 195
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 11,
+  "fields": {
+    "content_type": 12,
+    "object_id": 63,
+    "date": "2025-06-07",
+    "concept": 180
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 12,
+  "fields": {
+    "content_type": 12,
+    "object_id": 64,
+    "date": "2025-06-08",
+    "concept": 166
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 13,
+  "fields": {
+    "content_type": 12,
+    "object_id": 65,
+    "date": "2025-06-09",
+    "concept": 195
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 15,
+  "fields": {
+    "content_type": 12,
+    "object_id": 66,
+    "date": "2025-06-11",
+    "concept": 198
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 18,
+  "fields": {
+    "content_type": 12,
+    "object_id": 67,
+    "date": "2025-06-14",
+    "concept": 168
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 19,
+  "fields": {
+    "content_type": 12,
+    "object_id": 68,
+    "date": "2025-06-15",
+    "concept": 186
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 20,
+  "fields": {
+    "content_type": 12,
+    "object_id": 69,
+    "date": "2025-06-16",
+    "concept": 196
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 23,
+  "fields": {
+    "content_type": 12,
+    "object_id": 70,
+    "date": "2025-06-19",
+    "concept": 3
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 25,
+  "fields": {
+    "content_type": 12,
+    "object_id": 71,
+    "date": "2025-06-21",
+    "concept": 159
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 26,
+  "fields": {
+    "content_type": 12,
+    "object_id": 72,
+    "date": "2025-06-22",
+    "concept": 155
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 29,
+  "fields": {
+    "content_type": 12,
+    "object_id": 73,
+    "date": "2025-06-25",
+    "concept": 172
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 30,
+  "fields": {
+    "content_type": 12,
+    "object_id": 74,
+    "date": "2025-06-26",
+    "concept": 190
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 33,
+  "fields": {
+    "content_type": 12,
+    "object_id": 75,
+    "date": "2025-06-29",
+    "concept": 155
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 34,
+  "fields": {
+    "content_type": 12,
+    "object_id": 76,
+    "date": "2025-06-30",
+    "concept": 158
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 35,
+  "fields": {
+    "content_type": 12,
+    "object_id": 77,
+    "date": "2025-07-01",
+    "concept": 176
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 37,
+  "fields": {
+    "content_type": 12,
+    "object_id": 78,
+    "date": "2025-07-03",
+    "concept": 182
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 40,
+  "fields": {
+    "content_type": 12,
+    "object_id": 79,
+    "date": "2025-07-06",
+    "concept": 203
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 45,
+  "fields": {
+    "content_type": 12,
+    "object_id": 80,
+    "date": "2025-07-11",
+    "concept": 164
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 46,
+  "fields": {
+    "content_type": 12,
+    "object_id": 81,
+    "date": "2025-07-12",
+    "concept": 185
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 47,
+  "fields": {
+    "content_type": 12,
+    "object_id": 82,
+    "date": "2025-07-13",
+    "concept": 203
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 48,
+  "fields": {
+    "content_type": 12,
+    "object_id": 83,
+    "date": "2025-07-14",
+    "concept": 190
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 53,
+  "fields": {
+    "content_type": 12,
+    "object_id": 84,
+    "date": "2025-07-19",
+    "concept": 185
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 54,
+  "fields": {
+    "content_type": 12,
+    "object_id": 85,
+    "date": "2025-07-20",
+    "concept": 202
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 55,
+  "fields": {
+    "content_type": 12,
+    "object_id": 86,
+    "date": "2025-07-21",
+    "concept": 154
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 56,
+  "fields": {
+    "content_type": 12,
+    "object_id": 87,
+    "date": "2025-07-22",
+    "concept": 178
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 59,
+  "fields": {
+    "content_type": 12,
+    "object_id": 88,
+    "date": "2025-07-25",
+    "concept": 181
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 60,
+  "fields": {
+    "content_type": 12,
+    "object_id": 89,
+    "date": "2025-07-26",
+    "concept": 164
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 61,
+  "fields": {
+    "content_type": 12,
+    "object_id": 90,
+    "date": "2025-07-27",
+    "concept": 162
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 63,
+  "fields": {
+    "content_type": 12,
+    "object_id": 91,
+    "date": "2025-07-29",
+    "concept": 182
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 64,
+  "fields": {
+    "content_type": 12,
+    "object_id": 92,
+    "date": "2025-07-30",
+    "concept": 197
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 65,
+  "fields": {
+    "content_type": 12,
+    "object_id": 93,
+    "date": "2025-07-31",
+    "concept": 166
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 66,
+  "fields": {
+    "content_type": 12,
+    "object_id": 94,
+    "date": "2025-07-08",
+    "concept": 1
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 67,
+  "fields": {
+    "content_type": 12,
+    "object_id": 95,
+    "date": "2025-07-09",
+    "concept": 200
+  }
+},
+{
+  "model": "problems.dailycontent",
+  "pk": 68,
+  "fields": {
+    "content_type": 12,
+    "object_id": 96,
+    "date": "2025-07-10",
+    "concept": 189
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 1,
+  "fields": {
+    "title": "Introduction to Deep Learning",
+    "slug": "introduction-to-deep-learning",
+    "description": "# Introduction to Deep Learning\r\n\r\nDeep learning has rapidly advanced in recent years, positioning itself as one of the most influential fields within `artificial intelligence (AI)`. This guide explores deep learning from the ground up, covering what it is, how it works, its core concepts, and its transformative applications.\r\n\r\n\r\n## What is Deep Learning?\r\n\r\nDeep learning is a subset of machine learning, which itself is a branch of AI focused on enabling computers to learn from data without being explicitly programmed. Unlike traditional machine learning, where data representations often require significant pre-processing and hand-engineering, deep learning uses neural networks with many layers to automatically learn data representations.\r\n\r\nDeep learning networks are generally inspired by the structure of human brain, specifically neurons and synaptic connections. This layered, hierarchical structure of artificial neural networks allows deep learning models to capture complex patterns in large datasets. As data passes through each layer, the network learns increasingly abstract features, transforming raw input into a format that reveals high-level insights.\r\n\r\n\r\n\r\n\r\n## The History of Deep Learning\r\n\r\nWhile deep learning's breakthrough has largely occurred in the 21st century, the idea of neural networks dates back to the mid-20th century:\r\n\r\n\r\n### `1950s – 1970s: Early Beginnings `\r\n\r\nThe concept of artificial neurons was proposed by Warren McCulloch and Walter Pitts in the 1940s, envisioning artificial neurons that mimic the brain's structure. However, initial attempts, such as the perceptron algorithm, faced significant limitations in capturing non-linear relationships, curtailing early enthusiasm.\r\n\r\n### `1980s – 1990s: The Backpropagation Era` \r\n\r\nThe invention of the backpropagation algorithm by Geoffrey Hinton and others in the 1980s, allowed for training multi-layer neural networks. Despite this progress, practical challenges remained due to hardware constraints, limited datasets, and computational costs.\r\n\r\n\r\n### `2000s – Present: The Deep Learning Revolution`\r\n\r\nThe arrival of powerful GPUs, vast datasets, and improved algorithms brought a resurgence in deep learning interest in the early 2010s. Deep learning models like convolutional neural networks (CNNs) demonstrated remarkable performance on tasks like image recognition, sparking major advancements in AI.\r\n\r\n\r\n\r\n\r\n## How Does Deep Learning Work?\r\n\r\nDeep learning models function by adjusting the weights of neurons through a process called training. The process involves several key steps:\r\n\r\n- **`Input Layer`** -\r\nThe data is first fed into the input layer. Each node (or neuron) in this layer represents one feature of the input data, such as a pixel value in an image or a word in a sentence.\r\n\r\n- **`Hidden Layers`** -\r\nHidden layers are the backbone of deep learning models. Each neuron in these layers applies mathematical transformations and passes the result to neurons in subsequent layers. These layers are responsible for abstracting information from data, progressively learning complex features by adjusting neuron weights.\r\n\r\n- **`Output Layer`** -\r\nThe final layer produces the model’s predictions, which could be a class label in classification tasks or a numerical value in regression tasks.\r\n\r\n- **`Training through Backpropagation`** -\r\nTraining a deep learning model involves adjusting neuron weights to minimize error, using a process called backpropagation. During backpropagation, the model calculates gradients (partial derivatives of the error with respect to each weight) and adjusts weights to reduce the error.\r\n\r\n- **`Optimization and Regularization`** -\r\nOptimizers like stochastic gradient descent (SGD) help find the optimal weights, while regularization techniques (e.g., dropout, regularizer) prevent overfitting by randomly deactivating neurons during training.\r\n\r\n\r\n\r\n\r\n## Core Components of Deep Learning\r\n\r\nDeep learning models rely on specific components and concepts to learn effectively:\r\n\r\n- **`Activation Functions`** -\r\nActivation functions introduce non-linearity to the model, allowing it to learn complex patterns. Common activation functions include:\r\n    - **`Sigmoid`**: Squeezes values between 0 and 1, useful for binary classification.\r\n    - **`ReLU`**: (Rectified Linear Unit): Sets negative values to zero, speeding up convergence in deep networks.\r\n    - **`Tanh`**: Maps values between -1 and 1, used where symmetry around zero is desirable.\r\n\r\n- **`Loss Functions`** -\r\nLoss functions measure how well the model’s predictions match the expected results. Common loss functions are:\r\n    - **`Mean Squared Error (MSE)`** : Used in regression problems.\r\n    - **`Cross-Entropy`**: Often used in classification tasks, comparing the predicted probability distribution with the true distribution.\r\n\r\n- **`Optimizer`** -\r\n`Optimizers, such as SGD, Adam, and RMSProp`, are algorithms that adjust the model’s weights to minimize the loss function. Adam, for example, is known for its adaptive learning rate, which improves convergence.\r\n\r\n- **`Regularization Techniques`** -\r\nRegularization techniques help prevent overfitting, ensuring that the model generalizes well on unseen data. Popular methods include:\r\n    - **`Dropout`**: Temporarily removes random neurons during training.\r\n    - **`L2 Regularization`**: Adds a penalty proportional to the square of the weights.\r\n\r\n\r\n## Popular Architectures in Deep Learning\r\n \r\nDifferent architectures cater to various tasks, from image recognition to natural language processing (NLP):\r\n\r\n- **`Convolutional Neural Networks (CNNs)`** -\r\nCNNs are designed for image data and excel at recognizing spatial hierarchies. They use convolutional layers, pooling layers, and fully connected layers to automatically detect features such as edges and textures in images.\r\n\r\n- **`Recurrent Neural Networks (RNNs)`** -\r\nRNNs are suited for sequential data, such as text or time-series data, where context from previous inputs is essential. RNNs use loops in their architecture to “remember” previous information, though they are prone to vanishing gradients over long sequences.\r\n\r\n- **`Long Short-Term Memory (LSTM) Networks`** -\r\nLSTMs are an evolution of RNNs, designed to address the vanishing gradient problem. They use a cell state that allows information to flow more freely, making them highly effective for tasks like language translation and speech recognition.\r\n\r\n- **`Transformers`** -\r\nTransformers have revolutionized NLP by enabling parallel processing of data sequences, unlike RNNs, which process sequentially. Transformers use self-attention mechanisms to capture contextual relationships between words and are the backbone of advanced language models like BERT and GPT.\r\n\r\n- **`Generative Adversarial Networks (GANs)`**\r\nGANs consist of two neural networks—a generator and a discriminator — that work together to create realistic data. GANs have become popular in creative applications like image synthesis and style transfer.\r\n\r\n\r\n## Applications of Deep Learning\r\n \r\nDeep learning's versatility is evident in its wide array of applications:\r\n- **`Image and Video Recognition`** - \r\nDeep learning powers facial recognition, object detection, and real-time video analysis. For example, CNNs have significantly improved the accuracy of facial recognition, impacting security and user experience in smartphones.\r\n \r\n- **`Natural Language Processing (NLP)`** -\r\nDeep learning models such as BERT, GPT, and Transformers have elevated NLP tasks like translation, sentiment analysis, and text summarization, enabling AI to understand and generate human-like language.\r\n \r\n- **`Healthcare and Medical Diagnosis`** -\r\nDeep learning has enhanced diagnostic tools, such as analyzing medical images for diseases like cancer. Neural networks can also interpret MRI, CT scans, and X-rays, aiding doctors with more accurate, faster diagnoses.\r\n \r\n- **`Autonomous Vehicles`** -\r\nSelf-driving cars rely on deep learning for navigation, object detection, and decision-making. CNNs and LSTMs analyse sensor and camera data in real-time, making autonomous driving safer and more responsive.\r\n \r\n- **`Finance and Fraud Detection`** -\r\nDeep learning models help identify fraudulent transactions by learning patterns indicative of fraud, offering enhanced security for financial institutions.\r\n \r\n- **`Gaming and Virtual Reality`** -\r\nDeep learning has brought advancements in non-player character (NPC) behaviour, procedural content generation, and real-time rendering, enhancing gaming and VR experiences.\r\n\r\n## Conclusion\r\n \r\nDeep learning has fundamentally transformed the field of AI, enabling computers to achieve tasks previously thought impossible. From computer vision and NLP to healthcare and autonomous vehicles, deep learning’s impact is profound and far-reaching. Although challenges remain, the field's rapid evolution and ongoing research promise an exciting future where deep learning continues to enhance our technological capabilities and reshape industries.",
+    "one_liner_desc": "Deep learning is a subset of machine learning that utilizes artificial neural networks with multiple layers to learn complex patterns from data.",
+    "level": "Medium",
+    "last_updated_timestamp": "2025-03-07T18:12:10.611Z",
+    "creation_timestamp": "2025-03-06T17:45:39.036Z",
+    "preview_image_url": "https://assets-www.readspeaker.com/uploads/2023/06/deep-learning-vs-machine-learning-vs-ai-an-in-depth-guide-blog-header.webp?width=860&height=400&aspect_ratio=860:400",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 2,
+  "fields": {
+    "title": "yo-title",
+    "slug": "yo-title",
+    "description": "kajsk",
+    "one_liner_desc": "kajs",
+    "level": "Easy",
+    "last_updated_timestamp": "2025-04-13T08:12:26.761Z",
+    "creation_timestamp": "2025-04-02T20:37:14.130Z",
+    "preview_image_url": "kjkj",
+    "author": 3,
+    "concept_type": "ML",
+    "tags": [
+      2
+    ],
+    "saved_by": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 3,
+  "fields": {
+    "title": "yo-title",
+    "slug": "yo-title-2",
+    "description": "kqjwq",
+    "one_liner_desc": "qkwj12",
+    "level": "Hard",
+    "last_updated_timestamp": "2025-04-13T08:13:55.113Z",
+    "creation_timestamp": "2025-04-02T20:37:42.316Z",
+    "preview_image_url": "kksjkwe",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [
+      1
+    ],
+    "saved_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 154,
+  "fields": {
+    "title": "dog",
+    "slug": "dog",
+    "description": "Traditional teach very foot home mind. Safe former generation market market government.",
+    "one_liner_desc": "It rather newspaper time increase yard.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.145Z",
+    "creation_timestamp": "2025-06-27T19:36:35.145Z",
+    "preview_image_url": "https://picsum.photos/221/992",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 155,
+  "fields": {
+    "title": "direction",
+    "slug": "direction",
+    "description": "Yard simply wait nothing. Enter seven your forget.",
+    "one_liner_desc": "Must care whole analysis much.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.155Z",
+    "creation_timestamp": "2025-06-27T19:36:35.155Z",
+    "preview_image_url": "https://dummyimage.com/383x123",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 156,
+  "fields": {
+    "title": "month",
+    "slug": "month",
+    "description": "Line nothing bring glass.",
+    "one_liner_desc": "Force pick adult try green drive popular nothing.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.162Z",
+    "creation_timestamp": "2025-06-27T19:36:35.162Z",
+    "preview_image_url": "https://dummyimage.com/355x269",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 157,
+  "fields": {
+    "title": "include",
+    "slug": "include",
+    "description": "Law material trip specific. Decade western exactly any front early method. Hour rise bit college song address.",
+    "one_liner_desc": "Assume politics protect seem company fill.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:36:35.168Z",
+    "creation_timestamp": "2025-06-27T19:36:35.168Z",
+    "preview_image_url": "https://dummyimage.com/43x588",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 158,
+  "fields": {
+    "title": "compare",
+    "slug": "compare",
+    "description": "Result body director explain. Itself near ago everybody. Occur stage run than dog.",
+    "one_liner_desc": "Peace man now great this.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:36:35.174Z",
+    "creation_timestamp": "2025-06-27T19:36:35.174Z",
+    "preview_image_url": "https://dummyimage.com/563x918",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 159,
+  "fields": {
+    "title": "charge",
+    "slug": "charge",
+    "description": "Attention age including right. Charge dog teach store property plan. Budget single expect.",
+    "one_liner_desc": "Sometimes environmental ok rate issue with agency decide.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.181Z",
+    "creation_timestamp": "2025-06-27T19:36:35.181Z",
+    "preview_image_url": "https://picsum.photos/539/968",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 160,
+  "fields": {
+    "title": "rock",
+    "slug": "rock",
+    "description": "There down best growth. He drive yourself indeed. Nearly month strategy student summer size.",
+    "one_liner_desc": "Eight write them result approach happy rate.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.189Z",
+    "creation_timestamp": "2025-06-27T19:36:35.189Z",
+    "preview_image_url": "https://dummyimage.com/2x821",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 161,
+  "fields": {
+    "title": "stuff",
+    "slug": "stuff",
+    "description": "Mrs glass believe nearly idea question administration care. Those approach art benefit article head grow spend.",
+    "one_liner_desc": "Nearly off evidence both individual.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.196Z",
+    "creation_timestamp": "2025-06-27T19:36:35.196Z",
+    "preview_image_url": "https://dummyimage.com/473x331",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 162,
+  "fields": {
+    "title": "either",
+    "slug": "either",
+    "description": "Surface enough customer by information himself. Fear than family discussion you.",
+    "one_liner_desc": "Music oil his prevent film nation way.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.205Z",
+    "creation_timestamp": "2025-06-27T19:36:35.205Z",
+    "preview_image_url": "https://picsum.photos/672/849",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 163,
+  "fields": {
+    "title": "material",
+    "slug": "material",
+    "description": "Statement someone often parent value institution degree eight. Government common must key. Our occur set day sign.",
+    "one_liner_desc": "Speak your smile former reality.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.213Z",
+    "creation_timestamp": "2025-06-27T19:36:35.213Z",
+    "preview_image_url": "https://placekitten.com/732/121",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 164,
+  "fields": {
+    "title": "Mr",
+    "slug": "mr",
+    "description": "Region lot near account glass and view. Check ability newspaper attention likely. Letter thing energy identify floor fear.",
+    "one_liner_desc": "Ok only hot behavior near consider sound.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:36:35.223Z",
+    "creation_timestamp": "2025-06-27T19:36:35.223Z",
+    "preview_image_url": "https://dummyimage.com/420x985",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 165,
+  "fields": {
+    "title": "reach",
+    "slug": "reach",
+    "description": "Year world know job raise tax serious. Push change firm sure. Hair sign position bring form.",
+    "one_liner_desc": "Third involve commercial current defense.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.230Z",
+    "creation_timestamp": "2025-06-27T19:36:35.230Z",
+    "preview_image_url": "https://placekitten.com/992/866",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 166,
+  "fields": {
+    "title": "check",
+    "slug": "check",
+    "description": "Figure yard writer voice who nor. Then act name town. Same their particularly worker same.",
+    "one_liner_desc": "Seem vote their industry boy billion at.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.239Z",
+    "creation_timestamp": "2025-06-27T19:36:35.239Z",
+    "preview_image_url": "https://dummyimage.com/779x298",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 167,
+  "fields": {
+    "title": "set",
+    "slug": "set",
+    "description": "Might its employee prevent control foreign. A development teacher friend plant without air. Information likely draw become.",
+    "one_liner_desc": "Agent anything work rich.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.250Z",
+    "creation_timestamp": "2025-06-27T19:36:35.250Z",
+    "preview_image_url": "https://dummyimage.com/252x805",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 168,
+  "fields": {
+    "title": "itself",
+    "slug": "itself",
+    "description": "Response become even draw. Question wish general control from occur federal popular.",
+    "one_liner_desc": "Continue soldier though watch.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.258Z",
+    "creation_timestamp": "2025-06-27T19:36:35.258Z",
+    "preview_image_url": "https://picsum.photos/197/353",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 169,
+  "fields": {
+    "title": "kind",
+    "slug": "kind",
+    "description": "Hour feeling manager interest rule pull sure. Free bank hand black religious ever plant. Fight evidence affect enter moment traditional ago although.",
+    "one_liner_desc": "At view meeting table feel.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.264Z",
+    "creation_timestamp": "2025-06-27T19:36:35.264Z",
+    "preview_image_url": "https://placekitten.com/126/528",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 170,
+  "fields": {
+    "title": "against",
+    "slug": "against",
+    "description": "Structure sea eye such TV people above week. Through benefit consumer. Or price think.",
+    "one_liner_desc": "Include wife almost still team economy throughout.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.277Z",
+    "creation_timestamp": "2025-06-27T19:36:35.277Z",
+    "preview_image_url": "https://placekitten.com/282/675",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 171,
+  "fields": {
+    "title": "much",
+    "slug": "much",
+    "description": "Above learn memory into tonight consider kind Republican. Once fire woman out region.",
+    "one_liner_desc": "Build Republican actually catch movie able whole.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.283Z",
+    "creation_timestamp": "2025-06-27T19:36:35.283Z",
+    "preview_image_url": "https://dummyimage.com/26x582",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 172,
+  "fields": {
+    "title": "everybody",
+    "slug": "everybody",
+    "description": "National serious or site simple since anything. Color floor base. Who least amount million start. Term contain land degree face officer son.",
+    "one_liner_desc": "He little middle than.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.291Z",
+    "creation_timestamp": "2025-06-27T19:36:35.291Z",
+    "preview_image_url": "https://dummyimage.com/1009x114",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 173,
+  "fields": {
+    "title": "act",
+    "slug": "act",
+    "description": "Run theory similar expert gun. Loss both especially manage commercial. Usually finally understand president grow section.",
+    "one_liner_desc": "Pretty few real popular level culture top.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:36:35.296Z",
+    "creation_timestamp": "2025-06-27T19:36:35.296Z",
+    "preview_image_url": "https://dummyimage.com/584x270",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 174,
+  "fields": {
+    "title": "issue",
+    "slug": "issue",
+    "description": "Into stand economic nor energy contain pick. Apply in strong information value rock protect dog.",
+    "one_liner_desc": "Interview under green husband name expect attorney big.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.300Z",
+    "creation_timestamp": "2025-06-27T19:36:35.300Z",
+    "preview_image_url": "https://picsum.photos/841/189",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 175,
+  "fields": {
+    "title": "because",
+    "slug": "because",
+    "description": "Toward picture Congress dinner and arm your. Hair every particular hope hard find foreign.",
+    "one_liner_desc": "Office because become fire send how.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.304Z",
+    "creation_timestamp": "2025-06-27T19:36:35.304Z",
+    "preview_image_url": "https://dummyimage.com/552x260",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 176,
+  "fields": {
+    "title": "piece",
+    "slug": "piece",
+    "description": "Process within attention certain. Customer good bank force way teach answer. Pay fish five new cell who.",
+    "one_liner_desc": "Somebody decade record ground.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.308Z",
+    "creation_timestamp": "2025-06-27T19:36:35.308Z",
+    "preview_image_url": "https://picsum.photos/480/921",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 177,
+  "fields": {
+    "title": "draw",
+    "slug": "draw",
+    "description": "Camera identify option position fear subject tax. College benefit say family. Describe wall finally day.",
+    "one_liner_desc": "His stay decision important build spend.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.313Z",
+    "creation_timestamp": "2025-06-27T19:36:35.313Z",
+    "preview_image_url": "https://picsum.photos/149/446",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 178,
+  "fields": {
+    "title": "she",
+    "slug": "she",
+    "description": "Rule word yourself out ever hotel lawyer. Economy our mouth they culture you.",
+    "one_liner_desc": "Study sense back machine.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.317Z",
+    "creation_timestamp": "2025-06-27T19:36:35.317Z",
+    "preview_image_url": "https://placekitten.com/83/851",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 179,
+  "fields": {
+    "title": "south",
+    "slug": "south",
+    "description": "These hope season heavy phone tax person. Fund fire decision seat deal.",
+    "one_liner_desc": "Responsibility others let ball.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.321Z",
+    "creation_timestamp": "2025-06-27T19:36:35.321Z",
+    "preview_image_url": "https://dummyimage.com/892x462",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 180,
+  "fields": {
+    "title": "remain",
+    "slug": "remain",
+    "description": "Rock many several final. That spring medical red debate me soon would.",
+    "one_liner_desc": "Anything crime walk garden.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.326Z",
+    "creation_timestamp": "2025-06-27T19:36:35.326Z",
+    "preview_image_url": "https://picsum.photos/219/418",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 181,
+  "fields": {
+    "title": "father",
+    "slug": "father",
+    "description": "But rise debate too. Wide perhaps machine direction contain western simply.",
+    "one_liner_desc": "Nice majority bring affect.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.331Z",
+    "creation_timestamp": "2025-06-27T19:36:35.331Z",
+    "preview_image_url": "https://picsum.photos/452/103",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 182,
+  "fields": {
+    "title": "pressure",
+    "slug": "pressure",
+    "description": "Ten land yourself past trial within young. Hope television foreign media general. Partner from risk couple. Everyone lawyer fly society interesting professor.",
+    "one_liner_desc": "Commercial side happy relationship first growth garden.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.337Z",
+    "creation_timestamp": "2025-06-27T19:36:35.337Z",
+    "preview_image_url": "https://dummyimage.com/314x141",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 183,
+  "fields": {
+    "title": "some",
+    "slug": "some",
+    "description": "Source security dream. Know same blue Mrs able recent on.",
+    "one_liner_desc": "Write someone exactly understand.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.343Z",
+    "creation_timestamp": "2025-06-27T19:36:35.343Z",
+    "preview_image_url": "https://dummyimage.com/208x196",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 184,
+  "fields": {
+    "title": "whom",
+    "slug": "whom",
+    "description": "System wear road bill reach consider.",
+    "one_liner_desc": "Leg cultural too person improve myself.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.347Z",
+    "creation_timestamp": "2025-06-27T19:36:35.347Z",
+    "preview_image_url": "https://placekitten.com/715/339",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 185,
+  "fields": {
+    "title": "language",
+    "slug": "language",
+    "description": "Throughout option market though. Us buy send name.",
+    "one_liner_desc": "Book commercial start these pattern store factor.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:36:35.352Z",
+    "creation_timestamp": "2025-06-27T19:36:35.352Z",
+    "preview_image_url": "https://dummyimage.com/164x689",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 186,
+  "fields": {
+    "title": "involve",
+    "slug": "involve",
+    "description": "Become heart sport too after paper current. All collection free.",
+    "one_liner_desc": "Environmental structure deep story my understand.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.357Z",
+    "creation_timestamp": "2025-06-27T19:36:35.357Z",
+    "preview_image_url": "https://placekitten.com/331/233",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 187,
+  "fields": {
+    "title": "rule",
+    "slug": "rule",
+    "description": "Plant majority risk. Animal point space activity.",
+    "one_liner_desc": "Consider economic surface floor concern decide.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:36:35.364Z",
+    "creation_timestamp": "2025-06-27T19:36:35.364Z",
+    "preview_image_url": "https://placekitten.com/147/505",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 188,
+  "fields": {
+    "title": "ten",
+    "slug": "ten",
+    "description": "Plan bar require reveal wear wind. Leader yes teacher action.",
+    "one_liner_desc": "Fight your past.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.370Z",
+    "creation_timestamp": "2025-06-27T19:36:35.370Z",
+    "preview_image_url": "https://dummyimage.com/453x882",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 189,
+  "fields": {
+    "title": "move",
+    "slug": "move",
+    "description": "Firm low guy land. Along all improve against according senior. College week meeting management trial alone be.",
+    "one_liner_desc": "Often court man since audience.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.378Z",
+    "creation_timestamp": "2025-06-27T19:36:35.378Z",
+    "preview_image_url": "https://placekitten.com/881/570",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 190,
+  "fields": {
+    "title": "decade",
+    "slug": "decade",
+    "description": "Themselves him feel ten be. Sell including create card crime across suggest. Action draw yet hotel.",
+    "one_liner_desc": "Probably chance avoid difficult thank American.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.386Z",
+    "creation_timestamp": "2025-06-27T19:36:35.386Z",
+    "preview_image_url": "https://picsum.photos/755/465",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 191,
+  "fields": {
+    "title": "south",
+    "slug": "south-2",
+    "description": "Star able worry eye energy. Son Republican nation six record would. Resource artist condition.",
+    "one_liner_desc": "Baby size environmental benefit.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.394Z",
+    "creation_timestamp": "2025-06-27T19:36:35.394Z",
+    "preview_image_url": "https://dummyimage.com/556x952",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 192,
+  "fields": {
+    "title": "relate",
+    "slug": "relate",
+    "description": "Personal never other give. Begin white reveal spring wide its. Others world book policy.",
+    "one_liner_desc": "Mean war level moment painting voice.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:36:35.402Z",
+    "creation_timestamp": "2025-06-27T19:36:35.402Z",
+    "preview_image_url": "https://picsum.photos/995/929",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 193,
+  "fields": {
+    "title": "total",
+    "slug": "total",
+    "description": "Least enter possible specific country. Full off forget list couple. Catch voice Democrat perhaps pretty allow. Meeting last among business.",
+    "one_liner_desc": "Statement those not song.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.410Z",
+    "creation_timestamp": "2025-06-27T19:36:35.410Z",
+    "preview_image_url": "https://dummyimage.com/227x168",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 194,
+  "fields": {
+    "title": "rule",
+    "slug": "rule-2",
+    "description": "Country matter like meet everything network. Car project strategy a. Degree business worker himself Congress easy.",
+    "one_liner_desc": "Eat across value necessary trade or short too.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:36:35.415Z",
+    "creation_timestamp": "2025-06-27T19:36:35.415Z",
+    "preview_image_url": "https://placekitten.com/484/412",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 195,
+  "fields": {
+    "title": "finally",
+    "slug": "finally",
+    "description": "Compare able figure process citizen try late. This body owner again. Conference current individual performance last number authority.",
+    "one_liner_desc": "Article never another individual reveal drug.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.420Z",
+    "creation_timestamp": "2025-06-27T19:36:35.420Z",
+    "preview_image_url": "https://placekitten.com/1024/1007",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 196,
+  "fields": {
+    "title": "type",
+    "slug": "type",
+    "description": "Though style win. Write nice walk recently same state site.",
+    "one_liner_desc": "Its law voice.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.426Z",
+    "creation_timestamp": "2025-06-27T19:36:35.426Z",
+    "preview_image_url": "https://picsum.photos/495/324",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 197,
+  "fields": {
+    "title": "home",
+    "slug": "home",
+    "description": "Personal line sea firm next. Central rich key world. Health others usually summer only indeed. Pretty girl else woman special.",
+    "one_liner_desc": "Drive concern create avoid real interesting hear.",
+    "level": "hard",
+    "last_updated_timestamp": "2025-06-27T19:36:35.432Z",
+    "creation_timestamp": "2025-06-27T19:36:35.432Z",
+    "preview_image_url": "https://dummyimage.com/713x556",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 198,
+  "fields": {
+    "title": "cold",
+    "slug": "cold",
+    "description": "Role year like pull assume. Moment open crime career room past consider. Go free process. System throughout evening ground chance.",
+    "one_liner_desc": "Country arm situation already.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.438Z",
+    "creation_timestamp": "2025-06-27T19:36:35.438Z",
+    "preview_image_url": "https://picsum.photos/732/74",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 199,
+  "fields": {
+    "title": "bill",
+    "slug": "bill",
+    "description": "Expert somebody establish of central. Finally bring citizen similar. Rate as beat play area school adult might.",
+    "one_liner_desc": "Goal television sure choose.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.444Z",
+    "creation_timestamp": "2025-06-27T19:36:35.444Z",
+    "preview_image_url": "https://placekitten.com/440/721",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 200,
+  "fields": {
+    "title": "material",
+    "slug": "material-2",
+    "description": "Region culture reason red take successful far. Pretty employee environmental education future security media.",
+    "one_liner_desc": "Activity season computer deal act mouth thus five.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.450Z",
+    "creation_timestamp": "2025-06-27T19:36:35.450Z",
+    "preview_image_url": "https://placekitten.com/450/436",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 201,
+  "fields": {
+    "title": "fight",
+    "slug": "fight",
+    "description": "Bill activity office sport drive identify. Better though sea leader bad participant.",
+    "one_liner_desc": "Bit nothing any finally ground generation day.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.456Z",
+    "creation_timestamp": "2025-06-27T19:36:35.456Z",
+    "preview_image_url": "https://dummyimage.com/762x959",
+    "author": 1,
+    "concept_type": "DL",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 202,
+  "fields": {
+    "title": "reality",
+    "slug": "reality",
+    "description": "Hospital poor issue onto trial.",
+    "one_liner_desc": "Charge keep thus there explain during.",
+    "level": "medium",
+    "last_updated_timestamp": "2025-06-27T19:36:35.466Z",
+    "creation_timestamp": "2025-06-27T19:36:35.466Z",
+    "preview_image_url": "https://dummyimage.com/132x853",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.concept",
+  "pk": 203,
+  "fields": {
+    "title": "firm",
+    "slug": "firm",
+    "description": "Successful particularly put remember who relate story. Serious from person admit foot player account.",
+    "one_liner_desc": "Night data recent physical time just various.",
+    "level": "easy",
+    "last_updated_timestamp": "2025-06-27T19:36:35.474Z",
+    "creation_timestamp": "2025-06-27T19:36:35.474Z",
+    "preview_image_url": "https://picsum.photos/557/830",
+    "author": 1,
+    "concept_type": "ML",
+    "tags": [],
+    "saved_by": []
+  }
+},
+{
+  "model": "concepts.conceptsread",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "concept": 1,
+    "read_timestamp": "2025-03-08T08:29:45.468Z"
+  }
+},
+{
+  "model": "concepts.conceptsread",
+  "pk": 2,
+  "fields": {
+    "user": 3,
+    "concept": 1,
+    "read_timestamp": "2025-03-08T08:31:08.338Z"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 1,
+  "fields": {
+    "slug": "python-50",
+    "title": "Python 50",
+    "description": "this is python 50 course with many problems",
+    "created_at": "2025-04-04T15:40:15.244Z",
+    "updated_at": "2025-04-04T15:40:15.244Z",
+    "followers": [
+      1
+    ],
+    "likes": [
+      1
+    ]
+  }
+},
+{
+  "model": "ncore.tag",
+  "pk": 1,
+  "fields": {
+    "name": "Machine Learning"
+  }
+},
+{
+  "model": "ncore.tag",
+  "pk": 2,
+  "fields": {
+    "name": "Deep Learning"
+  }
+},
+{
+  "model": "ncore.tag",
+  "pk": 3,
+  "fields": {
+    "name": "Activation Function"
+  }
+},
+{
+  "model": "ncore.tag",
+  "pk": 4,
+  "fields": {
+    "name": "Sigmoid"
+  }
+},
+{
+  "model": "ncore.tag",
+  "pk": 5,
+  "fields": {
+    "name": "Softmax"
+  }
+},
+{
+  "model": "ncore.tag",
+  "pk": 6,
+  "fields": {
+    "name": "Neuron"
+  }
+},
+{
+  "model": "ncore.tag",
+  "pk": 7,
+  "fields": {
+    "name": "Perceptron"
+  }
+},
+{
+  "model": "ncore.tag",
+  "pk": 8,
+  "fields": {
+    "name": "Losses"
+  }
+},
+{
+  "model": "ncore.tag",
+  "pk": 9,
+  "fields": {
+    "name": "MSE"
+  }
+},
+{
+  "model": "ncore.tag",
+  "pk": 10,
+  "fields": {
+    "name": "MAE"
+  }
+},
+{
+  "model": "ncore.tag",
+  "pk": 11,
+  "fields": {
+    "name": "BCE"
+  }
+}
+]
