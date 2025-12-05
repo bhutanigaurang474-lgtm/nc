@@ -14,11 +14,11 @@ RUN pip install -r requirements.txt
 COPY . /be-app/
 
 # Expose port
-EXPOSE ${PORT}
+EXPOSE 8000
 
 # Run Django application
 COPY prodentrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-CMD gunicorn neurocods.wsgi:application --bind 0.0.0.0:${PORT}
+CMD gunicorn neurocods.wsgi:application --bind 0.0.0.0:$PORT
 
