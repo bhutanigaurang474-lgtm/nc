@@ -14,5 +14,6 @@ python manage.py collectstatic --noinput
 # Load fixture data
 python manage.py loaddata initial_data.json
 
+echo "PORT is: $PORT"
 # Start Django development server
 exec "$@"
