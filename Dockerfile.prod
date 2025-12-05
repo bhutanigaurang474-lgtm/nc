@@ -1,0 +1,24 @@
+# Base image
+FROM python:3.11-slim
+# Set work directory
+WORKDIR /be-app
+
+# Install Python dependencies
+COPY requirements.txt /be-app/
+# Install netcat and other utils
+RUN apt-get update && apt-get install -y netcat-openbsd
+
+RUN pip install -r requirements.txt
+
+# Copy project files
+COPY . /be-app/
+
+# Expose port
+EXPOSE 8000
+
+# Run Django application
+COPY prodentrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+CMD gunicorn neurocods.wsgi:application --bind 0.0.0.0:$PORT
+
